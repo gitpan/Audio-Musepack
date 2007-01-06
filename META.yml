@@ -1,10 +1,14 @@
-# http://module-build.sourceforge.net/META-spec.html
-#XXXXXXX This is a prototype!!!  It will change in the future!!! XXXXX#
-name:         Audio-Musepack
-version:      0.02
-version_from: Musepack.pm
-installdirs:  site
-requires:
-
+abstract: An object-oriented interface to Musepack file information
+author: 'Dan Sully, <daniel@cpan.org>'
 distribution_type: module
-generated_by: ExtUtils::MakeMaker version 6.21
+generated_by: Module::Install version 0.64
+license: perl
+name: Audio-Musepack
+no_index:
+  directory:
+    - inc
+    - t
+requires:
+  MP3::Info: 1.20
+  perl: 5.005
+version: 0.5
