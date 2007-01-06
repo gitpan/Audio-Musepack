@@ -1,13 +1,13 @@
 package Audio::Musepack;
 
-# $Id: Musepack.pm 16 2007-01-06 03:49:31Z dsully $
+# $Id: Musepack.pm 17 2007-01-06 03:51:11Z dsully $
 
 use strict;
 use Audio::APETags;
 use Fcntl qw(:seek);
 use MP3::Info;
 
-our $VERSION = '0.5';
+our $VERSION = '0.6';
 
 # First four bytes of stream are always fLaC
 use constant MPCHEADERFLAG => 'MP+';
