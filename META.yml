@@ -1,14 +1,25 @@
-abstract: An object-oriented interface to Musepack file information
-author: 'Dan Sully, <daniel@cpan.org>'
+---
+abstract: 'An object-oriented interface to Musepack file information and APE tag fields.'
+author:
+  - 'Dan Sully, <daniel@cpan.org>'
+build_requires:
+  ExtUtils::MakeMaker: 6.42
+configure_requires:
+  ExtUtils::MakeMaker: 6.42
 distribution_type: module
-generated_by: Module::Install version 0.64
+generated_by: 'Module::Install version 1.00'
 license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
 name: Audio-Musepack
 no_index:
   directory:
     - inc
     - t
 requires:
-  MP3::Info: 1.20
+  Audio::Scan: 0.85
   perl: 5.005
-version: 0.7
+resources:
+  license: http://dev.perl.org/licenses/
+version: 1.0
